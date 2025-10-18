@@ -46,15 +46,15 @@ export default function HeroSection() {
 
           {/* Imagem */}
           <div className="relative animate-fade-in-right animate-delay-200 mt-8 lg:mt-0">
-  <div className="pt-6 sm:pt-12 md:pt-16 relative z-10 animate-float">
-    <img
-      src="/agro-image-2-red.png"
-      alt="Painel Verdantis"
-      className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto rounded-2xl shadow-2xl border border-border/20 image-parallax"
-    />
-  </div>
-  <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-2xl blur-3xl transform scale-110 animate-pulse-glow"></div>
-</div>
+            <div className="pt-6 sm:pt-12 md:pt-16 relative z-10 animate-float">
+              <img
+                src="/agro-image-2-red.png"
+                alt="Painel Verdantis"
+                className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto rounded-2xl shadow-2xl border border-border/20 image-parallax"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-2xl blur-3xl transform scale-110 animate-pulse-glow"></div>
+          </div>
 
         </div>
       </div>
