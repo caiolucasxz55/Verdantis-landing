@@ -1,5 +1,5 @@
 
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/src/components/ui/badge"
 import { Leaf, Globe, Shield } from "lucide-react"
 
 

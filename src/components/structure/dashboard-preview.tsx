@@ -1,6 +1,6 @@
 "use client"
 
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/src/components/ui/badge"
 import {CheckCircle,ChevronLeft,ChevronRight,} from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 

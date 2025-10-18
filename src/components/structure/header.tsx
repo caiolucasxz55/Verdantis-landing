@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { Button } from "@/src/components/ui/button"
+import { Badge } from "@/src/components/ui/badge"
 import { Leaf, Menu, X } from "lucide-react"
 
 export default function Header() {
