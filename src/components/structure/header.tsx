@@ -8,12 +8,17 @@ import { Leaf, Menu, X } from "lucide-react"
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  const handleStart = () => {
+    
+    window.open("https://verdantis-webapp-vits.vercel.app/", "_blank", "noopener,noreferrer")
+  }
+
   return (
     <div className="bg-background">
       <header className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 fixed top-0 left-0 right-0 z-50 animate-fade-in-up">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
-            
+
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center animate-pulse-glow">
@@ -52,10 +57,15 @@ export default function Header() {
                 variant="outline"
                 size="sm"
                 className="border-black/40 btn-animate bg-transparent dark:border-black/80 cursor-pointer"
+                onClick={handleStart}
               >
                 Entrar
               </Button>
-              <Button size="sm" className="btn-animate cursor-pointer">
+              <Button
+                size="sm"
+                className="btn-animate cursor-pointer"
+                onClick={handleStart}
+              >
                 Começar
               </Button>
             </nav>
@@ -74,7 +84,7 @@ export default function Header() {
           </div>
         </div>
 
-      
+        {/* Menu Mobile */}
         {mobileMenuOpen && (
           <div className="bg-transparent/50 md:hidden border-t border-border/40 backdrop-blur animate-fade-in-down">
             <nav className="flex flex-col items-center space-y-4 py-4">
@@ -100,10 +110,15 @@ export default function Header() {
                 variant="outline"
                 size="sm"
                 className="border-black/40 bg-transparent dark:border-black/80 cursor-pointer w-32"
+                onClick={handleStart}
               >
                 Entrar
               </Button>
-              <Button size="sm" className="cursor-pointer w-32">
+              <Button
+                size="sm"
+                className="cursor-pointer w-32"
+                onClick={handleStart}
+              >
                 Começar
               </Button>
             </nav>

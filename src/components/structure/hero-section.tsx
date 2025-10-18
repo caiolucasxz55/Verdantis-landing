@@ -1,9 +1,14 @@
+"use client"
 import { Button } from "@/src/components/ui/button"
 import { Badge } from "@/src/components/ui/badge"
 import { ArrowRight, Play } from "lucide-react"
 import React from "react"
 
 export default function HeroSection() {
+  const handleStart = () => {
+  window.location.href = "https://verdantis-webapp-vits.vercel.app/"
+  }
+
   return (
     <section className="relative overflow-hidden pt-16 sm:pt-10 md:pt-16 lg:pt-20 pb-20 sm:pb-24 md:pb-28 lg:pb-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,7 +34,7 @@ export default function HeroSection() {
 
             {/* Botões */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-left animate-delay-300">
-              <Button size="lg" className="text-base btn-animate hover-glow">
+              <Button size="lg" className="text-base btn-animate hover-glow" onClick={handleStart}>
                 Começar Agora
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
